@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Web Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2d545e;
+      /* width: 1250px; */
+    }
+
+
+
+    .nav-element {
+      text-align: right;
+      padding: 10px;
+      background-color: aqua;
+      border-radius: 20px;
+
+
+    }
+
+    .nav-element span {
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      font-weight: bold;
+      text-decoration-style: none;
+
+
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-element span:hover {
+      background-color: #ffa8B6;
+      border-radius: 10px;
+    }
+
+    .nav-element span:active {
+      opacity: 50%;
+    }
+
+    .logo {
+      width: 150px;
+      margin-top: 10px;
+
+    }
+
+    .logo-div {
+      text-align: center;
+      background-color: black;
+      display: block;
+      width: 200px;
+      border-radius: 20px;
+
+    }
+
+    .input-div {
+      text-align: center;
+
+    }
+
+    input {
+      padding: 5px;
+      border-radius: 10px;
+      align-content: center;
+      width: 300px;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .input-div button {
+      padding: 5px;
+      border-radius: 7px;
+      width: 80px;
+    }
+
+    .input-div button:hover {
+      background-color: #ffa8B6;
+      transform: scale(1.1);
+    }
+
+    .marquee {
+      background-color: #c89666;
+      border-radius: 10px;
+      margin-top: 5px;
+      padding: 10px;
+      font-size: large;
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .main-div1 {
+      display: inline-flex;
+    }
+
+    .main-div1-alldiv {
+      width: 180px;
+    }
+
+    .pic {
+      border-radius: 10px;
+      margin-left: 25px;
+    }
+
+    .artist-pic {
+      border-radius: 70px;
+      margin-left: 25px;
+    }
+
+    .artist-pic:hover {
+      transform: scale(1.1);
+    }
+
+
+    .pic:hover {
+      transform: scale(1.1);
+    }
+
+    .paragraph {
+      margin-left: 25px;
+      margin-top: 10px;
+      /* background-color: #a28089; */
+      width: 150px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+
+    .paragraph:hover {
+      background-color: #a28089;
+      transform: scale(1.1);
+      color: blue;
+      /* opacity: 50%; */
+    }
+
+    .latest-Song-Title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      width: 200px;
+      height: 25px;
+      margin-left: 20px;
+    }
+
+    .footer-element li {
+      list-style: none;
+      display: inline;
+      margin-left: 20px;
+
+    }
+
+    footer {
+      text-align: right;
+    }
+
+    .main-down-div {
+      display: flex;
+      /* justify-content: space-between; */
+      border-radius: 5px;
+
+    }
+
+    .down-div1 {
+      width: 40%;
+      background-color: #c89f66;
+      margin-top: 5px;
+
+    }
+
+    .down-div2 {
+      width: 40%;
+      background-color: #c89f66;
+      margin-top: 5px;
+    }
+
+    .down-div3 {
+      width: 60%;
+      background-color: #c89f66;
+      margin-top: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div clsss="nav-div">
+        <nav class="nav-element">
+          
+            <div class="input-div">
+              <input type="text" placeholder="Serch Music">
+              <button>Search</button>
+            </div>
+            <div class="logo-div">
+              <img class="logo" src="musicweb\amazone-logo.svg" alt="Logo">
+            </div>
+
+            <span>Home</span>
+            <span>Music</span>
+            <span><a href="#artist-div">Artist</a></span>
+            <span><a href="#love-Song">Romantic Songs</a></span>
+            <span>Love Mashup</span>
+            <span>Motivation</span>
+          
+        </nav>
+      </div>
+    </header>
+    <marquee class="marquee" scrollamount="10px"><a>LATEST SONGS </a></marquee>
+    <p class="latest-Song-Title">Latest Songs</p>
+    <div class="main-div1">
+      <div class="main-div1-alldiv">
+        <img class="pic" src="musicweb/pic1.jpg" alt="Ajj ki Raat">
+        <p class="paragraph"><b> Aaj Ki Raat</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic2.jpg" alt="teri-meri-kahani" class="pic">
+        <p class="paragraph"><b> Sanam Teri Kasam</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic3.jpg" alt="Ram Siya Ram" class="pic" id="raam">
+        <p class="paragraph" id="raam"><b>Ram Siya Ram </b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic4.jpg" alt="Angaaron" class="pic">
+        <p class="paragraph"><b>Angaaron</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic5.jpg" alt="Akhiyan Gulab" class="pic">
+        <p class="paragraph"><b>Ankhiyan Gulab</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic6.jpg" alt="Ratan Lambiya" class="pic">
+        <p class="paragraph"><b>Ratan Lambiya</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic7.jpg" alt="teri-meri-kahani" class="pic">
+        <p class="paragraph"><b>Mujhko Irade De</b></p>
+      </div>
+
+    </div>
+
+    <marquee class="marquee" scrollamount="10px">ROMANTIC SONGS</marquee>
+    <p class="latest-Song-Title">Romantic Songs</p>
+    <div id="love-Song" class="main-div1">
+      <div class="main-div1-alldiv">
+        <img class="pic" src="musicweb/pic8.jpg" alt="Bekhayali">
+        <p class="paragraph"><b>Bekhayali</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic9.jpg" alt="Main Yaha Hoon" class="pic">
+        <p class="paragraph"><b>Main Yaha Hoon</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic10.jpg" alt="Gerua" class="pic">
+        <p class="paragraph"><b>Gerua(Dilwale) </b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic11.jpg" alt="Teri Meri Kahani" class="pic">
+        <p class="paragraph"><b>Teri Meri Kahani</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic12.jpg" alt="sanam re" class="pic">
+        <p class="paragraph"><b>Sanam Re</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic13.jpg" alt="Zalima" class="pic">
+        <p class="paragraph"><b>Zalima</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic7.jpg" alt="teri-meri-kahani" class="pic">
+        <p class="paragraph"><b>Mujhko Irade De</b></p>
+      </div>
+
+    </div>
+    <marquee class="marquee" scrollamount="10px">BHOJPURI SPECIAL</marquee>
+    <p class="latest-Song-Title">Bhojpuri Colection</p>
+
+    <div class="main-div1">
+      <div class="main-div1-alldiv">
+        <img class="pic" src="musicweb/bhojpuri1.jpg" alt="Palang Sagwaan ke " id="palang">
+        <p class="paragraph"><b>Palang Sagwaan Ke</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/bhojpuri3.jpg" alt="Piya ji ke muski" class="pic" id="muski">
+        <p class="paragraph"><b>Piya Ji Ke Muski</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/bhojpuri5.jpg" alt="Hari Hari Odhani" class="pic" id="odhani">
+        <p class="paragraph"><b>Hari Hari Odhani</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="musicweb/bhojpuri6.jpg" alt="Panche Ke Nache " class="pic" id="nache">
+        <p class="paragraph"><b>Panche Ke Nache </b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic12.jpg" alt="sanam re" class="pic">
+        <p class="paragraph"><b>Sanam Re</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic13.jpg" alt="Zalima" class="pic">
+        <p class="paragraph"><b>Zalima</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="musicweb/pic7.jpg" alt="teri-meri-kahani" class="pic">
+        <p class="paragraph"><b>Mujhko Irade De</b></p>
+      </div>
+    </div>
+
+    <marquee class="marquee" scrollamount="10px">ARTISTS</marquee>
+    <p class="latest-Song-Title">Artist</p>
+
+    <div id="artist-div" class="main-div1">
+      <div class="main-div1-alldiv">
+        <img class="artist-pic"
+          src="https://c.saavncdn.com/editorial/Let_sPlayArijitSinghHindi_20240812070403_150x150.jpg"
+          alt="Palang Sagwaan ke " id="palang">
+        <p class="paragraph"><b>Arijit Singh</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Shreya_Ghoshal_007_20241101074144_150x150.jpg" alt="Shreya Ghosal"
+          class="artist-pic" id="Shreya_Ghoshal">
+        <p class="paragraph"><b>Shreya Ghosal</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Sonu_Nigam_150x150.jpg" alt="Sonu Nigam" class="artist-pic"
+          id="odhani">
+        <p class="paragraph"><b>Sonu Nigam</b></p>
+      </div>
+
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Sachet_Tandon_20191129105330_150x150.jpg" alt="Sachet tondon "
+          class="artist-pic" id="nache">
+        <p class="paragraph"><b>Sachet Tandan</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Alka_Yagnik_002_20220314192930_150x150.jpg" alt="Alka Yagnik-pic"
+          class="artist-pic">
+        <p class="paragraph"><b>Alka Yagnik</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Neha_Kakkar_007_20241212115832_150x150.jpg" alt="Neha_Kakkar"
+          class="artist-pic">
+        <p class="paragraph"><b>Neha_Kakkar</b></p>
+      </div>
+      <div class="main-div1-alldiv">
+        <img src="https://c.saavncdn.com/artists/Kumar_Sanu_150x150.jpg" alt="Kumar sanu" class="artist-pic">
+        <p class="paragraph"><b>Kumar Sanu</b></p>
+      </div>
+    </div>
+
+
+
+    <div style="background-color: #c89666; height: 10px; border-radius: 5px;"></div>
+
+
+
+
+
+    <div class="main-down-div">
+      <div class="down-div1">
+        <ul>
+          <h3>Top Artists</h3>
+          <li><a href="https://en.wikipedia.org/wiki/Shreya_Ghoshal">Shreya Ghoshal</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Neha_Kakkar">Neha Kakkar</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Arijit_Singh">Arijit Singh</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Badshah_(rapper)">Badshah</a> </li>
+          <li><a href="https://en.wikipedia.org/wiki/Atif_Aslam">Atif Aslam</a> </li>
+          <li><a href="https://en.wikipedia.org/wiki/Justin_Bieber">Justin Bieber</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Himesh_Reshammiya">Himesh Reshammiya</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Lata_Mangeshkar">Lata Mangeshkar</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Diljit_Dosanjh"> Diljit Dosanjh</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ed_Sheeran">Ed Sheeran</a></li>
+          <li><a href="https://wikibio.in/sanam-puri/">Sanam Puri</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Armaan_Malik"> Armaan Malik</a></li>
+        </ul>
+
+      </div>
+      <div class="down-div2">
+        <ul>
+          <h3>Languages</h3>
+          <li><a href="https://www.jiosaavn.com/featured/best-of-romance-hindi/SBKnUgjNeMIwkg5tVhI3fw__">Hindi Songs</a>
+          </li>
+          <li><a
+              href="https://www.jiosaavn.com/featured/punjabi:_india_superhits_top_50/wSwarbl2bQSrB59Sr2unUQ__">Punjabi
+              Songs</a></li>
+          <li><a
+              href="https://www.jiosaavn.com/featured/bhojpuri:_india_superhits_top_50/8c-UE,,iBhN8497ZNqIDKA__">Bhojpuri
+              Songs</a></li>
+          <li><a href="https://www.jiosaavn.com/featured/tamil:_india_superhits_top_50/Dq3pWn1coqesud-ETNX4vg__">Tamil
+              Songs</a> </li>
+          <li><a href="">Telugu Songs</a> </li>
+          <li><a href="">Kannada Songs</a></li>
+          <li><a href="https://www.jiosaavn.com/song/gujrati-moj-kare/PCUcQwF1fFY">Gujarati Songs</a></li>
+          <li><a href="">Marathi Songs</a></li>
+          <li><a href="https://www.jiosaavn.com/featured/odia:_india_superhits_top_50_/Jj8SmxoWEzYZNLR,rP3WSg__"> Odia
+              Songs</a></li>
+          <li><a href="">Rajasthani Songs</a></li>
+          <li><a
+              href="https://www.jiosaavn.com/featured/haryanvi:_india_superhits_top_50/572s4ABAzlBFMb4ZdYSGfQ__">Haryanvi
+              Songs</a></li>
+          <li><a href=""> Assamese Songs</a></li>
+        </ul>
+      </div>
+
+      <div class="down-div3">
+        <ul>
+          <h3>Company</h3>
+          <li>About Us</li>
+          <li>Culture</li>
+          <li>Blog</li>
+          <li>Terms & Privacy</li>
+          <li>JioSaavn Artist Insights</li>
+          <li>JioSaavn YourCast</li>
+          <li>Help & Support</li>
+        </ul>
+      </div>
+      <div class="down-div3">
+        <ul>
+          <h3>Contact</h3>
+          <li><img src="PROJECTS IMAGE/facebooklogo.png">FaceBook</li>
+          <li><img src="PROJECTS IMAGE/instagramlogo.png">Instagram</li>
+          <li><img src="PROJECTS IMAGE/whatsapplogo.png">WhatsApp</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+</body>
+
+</html>
